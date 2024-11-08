@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -14,7 +19,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +36,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.LoaderBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000bf;
+  z-index: 1; 
+}
+
+.LoaderBox img {
+  margin-top: 15%;
 }
